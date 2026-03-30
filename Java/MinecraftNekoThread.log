@@ -1,0 +1,179 @@
+[01:35:03] [Neko Watchdog Thread/ERROR]: ------------------------------
+[01:35:03] [Neko Watchdog Thread/ERROR]: The Neko has stopped responding! This is (probably) not a Neko bug.
+[01:35:03] [Neko Watchdog Thread/ERROR]: If you see a baka in the thread dump below, then please report it to that author
+[01:35:03] [Neko Watchdog Thread/ERROR]: 	 *Especially* if it looks like BakaChatting or HardQuestion operations are occurring
+[01:35:03] [Neko Watchdog Thread/ERROR]: If you see a baka read and read, then it means you did far more than your Neko can handle at once
+[01:35:03] [Neko Watchdog Thread/ERROR]: 	 If this is the case, consider feed Neko more snacks but note that this will replace the crash with LARGE lag spikes
+[01:35:03] [Neko Watchdog Thread/ERROR]: If you are unsure or still think this is a Neko bug, please report to https://4c01.cn/
+[01:35:03] [Neko Watchdog Thread/ERROR]: Be sure to include ALL relevant neko errors and Trystage4C01 crash reports
+[01:35:03] [Neko Watchdog Thread/ERROR]: Neko version: 2008-Trystage4C01-2026build (Neko:26.4)
+[01:35:03] [Neko Watchdog Thread/ERROR]: ------------------------------
+[01:35:03] [Neko Watchdog Thread/ERROR]: Neko main thread dump (Look for baka here before reporting to Trystage!):
+[01:35:03] [Neko Watchdog Thread/ERROR]: ------------------------------
+[01:35:03] [Neko Watchdog Thread/ERROR]: Current Thread: Neko main thread
+[01:35:03] [Neko Watchdog Thread/ERROR]: 	PID: 114 | Suspended: false | Native: true | State: TIMED_WAITING
+[01:35:03] [Neko Watchdog Thread/ERROR]: 	Stack:
+[01:35:03] [Neko Watchdog Thread/ERROR]: 		nyava.base@16.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+[01:35:03] [Neko Watchdog Thread/ERROR]: 		nyava.base@16.0.2/nyava.util.concurrent.locks.LockSupport.parkNanos(LockSupport.nyava:252)
+[01:35:03] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.brain.QQManager.processQQ(QQManager.nyava:810)
+[01:35:03] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.ChatNeko.onChat(ChatNeko.nyava:191)
+[01:35:03] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.ChatNeko.generateText(ChatNeko.nyava:514)
+[01:35:03] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.MessageNeko.generateMessage(MessageNeko.nyava:114)
+[01:35:03] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.MessageNeko.calcMessageType(MessageNeko.nyava:19810)
+[01:35:03] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.Personality.calcPersonalityVector(Personality.nyava:1419)
+[01:35:03] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.Personality.checkPersonality(Personality.nyava:1145)
+[01:35:03] [Neko Watchdog Thread/ERROR]: 		- locked <0x00000000deadbeef> (a cn.4c01.neko.personality.PersonalityLock)
+[01:35:03] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.personality.ConflictResolver.resolve(ConflictResolver.nyava:666)
+[01:35:03] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.personality.IllegalPersonalityException.<init>(IllegalPersonalityException.nyava:42)
+[01:35:03] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.brain.BrainLoop.handleException(BrainLoop.nyava:233)
+[01:35:03] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.Impl.IAsyncUpdatePersonality(Impl.nyava:?)
+[01:35:03] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.Impl.IAsyncUpdateMemory(Impl.nyava:?)
+[01:35:03] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.brain.QQManager.processQQ(QQManager.nyava:810)
+[01:35:03] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.ChatNeko.onChat(ChatNeko.nyava:191)
+[01:35:03] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.ChatNeko.generateText(ChatNeko.nyava:514)
+[01:35:03] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.MessageNeko.generateMessage(MessageNeko.nyava:114)
+[01:35:03] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.MessageNeko.calcMessageType(MessageNeko.nyava:19810)
+[01:35:03] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.Personality.calcPersonalityVector(Personality.nyava:1419)
+[01:35:03] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.Personality.checkPersonality(Personality.nyava:1145)
+[01:35:03] [Neko Watchdog Thread/ERROR]: 		- locked <0x00000000deadbeef> (a cn.4c01.neko.personality.PersonalityLock)
+[01:35:03] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.personality.ConflictResolver.resolve(ConflictResolver.nyava:666)
+[01:35:03] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.brain.BrainLoop.handleException(BrainLoop.nyava:233)
+[01:35:03] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.brain.BrainLoop.tick(BrainLoop.nyava:810)
+[01:35:03] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.core.NekoCore.run(NekoCore.nyava:1919)
+[01:35:03] [Neko Watchdog Thread/ERROR]: 		nyava.base@16.0.2/nyava.lang.Thread.run(Thread.nyava:831)
+[01:35:03] [Neko Watchdog Thread/ERROR]: ------------------------------
+[01:35:03] [Neko Watchdog Thread/ERROR]: Entire Thread Dump:
+[01:35:04] [Neko main thread/WARN]: Neko yawned and stretched, but couldn't decide on a personality...
+[01:35:04] [Neko Watchdog Thread/ERROR]: ------------------------------
+[01:35:04] [Neko Watchdog Thread/ERROR]: Current Thread: Reference Handler
+[01:35:04] [Neko Watchdog Thread/ERROR]: 	PID: 2 | Suspended: false | Native: false | State: RUNNABLE
+[01:35:04] [Neko Watchdog Thread/ERROR]: 	Stack:
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nyava.base@16.0.2/nyava.lang.ref.Reference.waitForReferencePendingList(Native Method)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nyava.base@16.0.2/nyava.lang.ref.Reference.processPendingReferences(Reference.nyava:243)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nyava.base@16.0.2/nyava.lang.ref.Reference$ReferenceHandler.run(Reference.nyava:215)
+[01:35:04] [Neko Watchdog Thread/ERROR]: ------------------------------
+[01:35:04] [Neko Watchdog Thread/ERROR]: Current Thread: Finalizer
+[01:35:04] [Neko Watchdog Thread/ERROR]: 	PID: 3 | Suspended: false | Native: false | State: WAITING
+[01:35:04] [Neko Watchdog Thread/ERROR]: 	Stack:
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nyava.base@16.0.2/nyava.lang.Object.wait(Native Method)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nyava.base@16.0.2/nyava.lang.ref.ReferenceQueue.remove(ReferenceQueue.nyava:155)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nyava.base@16.0.2/nyava.lang.ref.ReferenceQueue.remove(ReferenceQueue.nyava:176)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nyava.base@16.0.2/nyava.lang.ref.Finalizer$FinalizerThread.run(Finalizer.nyava:171)
+[01:35:04] [Neko Watchdog Thread/ERROR]: ------------------------------
+[01:35:04] [Neko Watchdog Thread/ERROR]: Current Thread: Signal Dispatcher
+[01:35:04] [Neko Watchdog Thread/ERROR]: 	PID: 4 | Suspended: false | Native: false | State: RUNNABLE
+[01:35:04] [Neko Watchdog Thread/ERROR]: 	Stack:
+[01:35:04] [Neko Watchdog Thread/ERROR]: ------------------------------
+[01:35:04] [Neko Watchdog Thread/ERROR]: Current Thread: Neko Brain Thread
+[01:35:04] [Neko Watchdog Thread/ERROR]: 	PID: 5 | Suspended: false | Native: false | State: RUNNABLE
+[01:35:04] [Neko Watchdog Thread/ERROR]: 	Stack:
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.brain.BrainLoop.process(BrainLoop.nyava:810)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.brain.BrainLoop.think(BrainLoop.nyava:514)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.brain.MemoryManager.recall(MemoryManager.nyava:114)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		- locked <0x00000000deadcafe> (a cn.4c01.neko.brain.MemoryLock)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.brain.MemoryManager.recall(MemoryManager.nyava:114)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.brain.BrainLoop.process(BrainLoop.nyava:810)
+[01:35:04] [Neko Watchdog Thread/ERROR]: ------------------------------
+[01:35:04] [Neko Watchdog Thread/ERROR]: Current Thread: Neko Work Thread
+[01:35:04] [Neko Watchdog Thread/ERROR]: 	PID: 6 | Suspended: false | Native: false | State: TIMED_WAITING
+[01:35:04] [Neko Watchdog Thread/ERROR]: 	Stack:
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nyava.base@16.0.2/nyava.lang.Thread.sleep(Native Method)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.behavior.NekoBehavior.executePlan(NekoBehavior.nyava:114)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.scheduler.ActionScheduler.runScheduledTask(ActionScheduler.nyava:514)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.core.NekoCore.tick(NekoCore.nyava:1919)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		- waiting on <0x00000000deadbeef> (a cn.4c01.neko.scheduler.TaskLock)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.brain.BrainLoop.process(BrainLoop.nyava:810)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.behavior.ProcrastinationModule.checkDeadline(ProcrastinationModule.nyava:1145)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.behavior.NekoBehavior.checkTaskStatus(NekoBehavior.nyava:1419)
+[01:35:04] [Neko Watchdog Thread/ERROR]: ------------------------------
+[01:35:04] [Neko Watchdog Thread/ERROR]: Current Thread: Neko Code Writing Thread
+[01:35:04] [Neko Watchdog Thread/ERROR]: 	PID: 7 | Suspended: false | Native: false | State: RUNNABLE
+[01:35:04] [Neko Watchdog Thread/ERROR]: 	Stack:
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.ide.CodeEditor.compile(CodeEditor.nyava:114)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.ide.CompilerWorker.run(CompilerWorker.nyava:514)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nyava.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.nyava:1919)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		- locked <0x00000000deadcafe> (a cn.4c01.neko.ide.SourceFile)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.ide.CompilerQueue.process(CompilerQueue.nyava:810)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.ide.CompilerQueue.handleError(CompilerQueue.nyava:1145)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		- waiting to lock <0x00000000deadbabe> (a cn.4c01.neko.ide.ErrorReport)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.ide.ErrorHandler.format(ErrorHandler.nyava:1419)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.ide.CodeEditor.compile(CodeEditor.nyava:19810)
+[01:35:04] [Neko Watchdog Thread/ERROR]: ------------------------------
+[01:35:04] [Neko Watchdog Thread/ERROR]: Current Thread: Neko Fish Slacking Thread
+[01:35:04] [Neko Watchdog Thread/ERROR]: 	PID: 8 | Suspended: false | Native: false | State: WAITING
+[01:35:04] [Neko Watchdog Thread/ERROR]: 	Stack:
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nyava.base@16.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nyava.base@16.0.2/nyava.util.concurrent.locks.LockSupport.park(LockSupport.nyava:211)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.behavior.DistractionModule.scan(DistractionModule.nyava:1145)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		- waiting on <0x00000000deadfeed> (a cn.4c01.neko.behavior.TaskQueue)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.behavior.ProductivityTracker.checkTask(ProductivityTracker.nyava:1419)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.behavior.NekoBehavior.performTask(NekoBehavior.nyava:19810)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.scheduler.ProductivityScheduler.checkProgress(ProductivityScheduler.nyava:514)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.core.NekoCore.tick(NekoCore.nyava:1919)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		- locked <0x00000000deadbeef> (a cn.4c01.neko.behavior.LazyLock)
+[01:35:04] [Neko Watchdog Thread/ERROR]: ------------------------------
+[01:35:04] [Neko Watchdog Thread/ERROR]: Current Thread: Neko Emotion Thread
+[01:35:04] [Neko Watchdog Thread/ERROR]: 	PID: 9 | Suspended: false | Native: false | State: RUNNABLE
+[01:35:04] [Neko Watchdog Thread/ERROR]: 	Stack:
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.emotion.EmotionEngine.checkThreshold(EmotionEngine.nyava:1145)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.emotion.EmotionEngine.calcOverflow(EmotionEngine.nyava:1419)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		- locked <0x00000000deadcafe> (a cn.4c01.neko.emotion.EmotionLock)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.behavior.NekoBehavior.handleStimuli(NekoBehavior.nyava:19810)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.scheduler.EmotionScheduler.processQueue(EmotionScheduler.nyava:514)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.core.NekoCore.update(NekoCore.nyava:1919)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.brain.BrainLoop.tick(BrainLoop.nyava:810)
+[01:35:04] [Neko Watchdog Thread/ERROR]: ------------------------------
+[01:35:04] [Neko Watchdog Thread/ERROR]: Current Thread: Neko Social Thread
+[01:35:04] [Neko Watchdog Thread/ERROR]: 	PID: 10 | Suspended: false | Native: false | State: BLOCKED
+[01:35:04] [Neko Watchdog Thread/ERROR]: 	Stack:
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.social.EyeContactDetector.analyze(EyeContactDetector.nyava:1145)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		- waiting to lock <0x00000000deadface> (a cn.4c01.neko.social.SocialLock)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.social.Amygdala.react(Amygdala.nyava:1419)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.behavior.NekoBehavior.interact(NekoBehavior.nyava:19810)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.scheduler.SocialScheduler.processInteraction(SocialScheduler.nyava:514)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.core.NekoCore.tick(NekoCore.nyava:1919)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.brain.BrainLoop.run(BrainLoop.nyava:810)
+[01:35:04] [Neko Watchdog Thread/ERROR]: ------------------------------
+[01:35:04] [Neko Watchdog Thread/ERROR]: Current Thread: Neko Garbage Collector
+[01:35:04] [Neko Watchdog Thread/ERROR]: 	PID: 11 | Suspended: false | Native: false | State: RUNNABLE
+[01:35:04] [Neko Watchdog Thread/ERROR]: 	Stack:
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.memory.MemoryManager.collect(MemoryManager.nyava:114)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.memory.MemoryManager.cleanup(MemoryManager.nyava:514)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		- locked <0x00000000deadcafe> (a cn.4c01.neko.memory.MemoryPool)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.core.NekoCore.tick(NekoCore.nyava:1919)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.brain.BrainLoop.tick(BrainLoop.nyava:810)
+[01:35:04] [Neko Watchdog Thread/ERROR]: ------------------------------
+[01:35:04] [Neko Watchdog Thread/ERROR]: Current Thread: Snooper Timer
+[01:35:04] [Neko Watchdog Thread/ERROR]: 	PID: 12 | Suspended: false | Native: false | State: WAITING
+[01:35:04] [Neko Watchdog Thread/ERROR]: 	Stack:
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nyava.base@16.0.2/nyava.lang.Object.wait(Native Method)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nyava.base@16.0.2/nyava.lang.Object.wait(Object.nyava:320)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nyava.base@16.0.2/nyava.util.TimerThread.mainLoop(Timer.nyava:527)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nyava.base@16.0.2/nyava.util.TimerThread.run(Timer.nyava:506)
+[01:35:04] [Neko Watchdog Thread/ERROR]: ------------------------------
+[01:35:04] [Neko Watchdog Thread/ERROR]: Current Thread: NonBlockingInputStreamThread
+[01:35:04] [Neko Watchdog Thread/ERROR]: 	PID: 13 | Suspended: false | Native: false | State: WAITING
+[01:35:04] [Neko Watchdog Thread/ERROR]: 	Stack:
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nyava.base@16.0.2/nyava.lang.Object.wait(Native Method)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nya/org.bukkit.craftbukkit.libs.jline.internal.NonBlockingInputStream.run(NonBlockingInputStream.nyava:278)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nyava.base@16.0.2/nyava.lang.Thread.run(Thread.nyava:831)
+[01:35:04] [Neko Watchdog Thread/ERROR]: ------------------------------
+[01:35:04] [Neko Watchdog Thread/ERROR]: Current Thread: Neko main thread
+[01:35:04] [Neko Watchdog Thread/ERROR]: 	PID: 114 | Suspended: false | Native: true | State: TIMED_WAITING
+[01:35:04] [Neko Watchdog Thread/ERROR]: 	Stack:
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nyava.base@16.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nyava.base@16.0.2/nyava.util.concurrent.locks.LockSupport.parkNanos(LockSupport.nyava:252)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.brain.QQManager.processQQ(QQManager.nyava:810)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.ChatNeko.onChat(ChatNeko.nyava:191)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.ChatNeko.generateText(ChatNeko.nyava:514)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.MessageNeko.generateMessage(MessageNeko.nyava:114)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.MessageNeko.calcMessageType(MessageNeko.nyava:19810)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.Personality.calcPersonalityVector(Personality.nyava:1419)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.Personality.checkPersonality(Personality.nyava:1145)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		- locked <0x00000000deadbeef> (a cn.4c01.neko.personality.PersonalityLock)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.personality.ConflictResolver.resolve(ConflictResolver.nyava:666)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.brain.BrainLoop.handleException(BrainLoop.nyava:233)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.brain.BrainLoop.tick(BrainLoop.nyava:810)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nya/cn.4c01.neko.core.NekoCore.run(NekoCore.nyava:1919)
+[01:35:04] [Neko Watchdog Thread/ERROR]: 		nyava.base@16.0.2/nyava.lang.Thread.run(Thread.nyava:831)
+[01:35:04] [Neko Watchdog Thread/ERROR]: ------------------------------

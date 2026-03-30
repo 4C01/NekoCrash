@@ -1,0 +1,57 @@
+cn.4c01.Neko$PersonalityTypeException: 性格之间不兼容
+    at cn.4c01.neko.MessageNeko.generateMessage(MessageNeko.nyava:114)
+    at cn.4c01.neko.ChatNeko.generateText(ChatNeko.nyava:514)
+    at cn.4c01.neko.ChatNeko.onChat(ChatNeko.nyava:191)
+    at cn.4c01.neko.brain.QQManager.processQQ(QQManager.nyava:810)
+Caused by: cn.4c01.neko.personality.IllegalPersonalityException: 傲娇和乖巧不能同时参与消息回复
+    at cn.4c01.neko.Personality.checkPersonality(Personality.nyava:1145)
+    at cn.4c01.neko.Personality.calcPersonalityVector(Personality.nyava:1419)
+    at cn.4c01.neko.MessageNeko.calcMessageType(MessageNeko.nyava:19810)
+
+
+
+cn.4c01.Neko$ProcrastinationException: 计划执行超时
+    at cn.4c01.neko.behavior.NekoBehavior.executePlan(NekoBehavior.nyava:114)
+    at cn.4c01.neko.scheduler.ActionScheduler.runScheduledTask(ActionScheduler.nyava:514)
+    at cn.4c01.neko.core.NekoCore.tick(NekoCore.nyava:1919)
+    at cn.4c01.neko.brain.BrainLoop.process(BrainLoop.nyava:810)
+Caused by: cn.4c01.neko.behavior.DelayException: 计划被摸鱼到明天
+    at cn.4c01.neko.behavior.ProcrastinationModule.checkDeadline(ProcrastinationModule.nyava:1145)
+    at cn.4c01.neko.behavior.NekoBehavior.checkTaskStatus(NekoBehavior.nyava:1419)
+    at cn.4c01.neko.behavior.NekoBehavior.executePlan(NekoBehavior.nyava:19810)
+
+
+
+cn.4c01.Neko$EmotionalCollapseException: 情绪溢出
+    at cn.4c01.neko.behavior.NekoBehavior.handleStimuli(NekoBehavior.nyava:114)
+    at cn.4c01.neko.scheduler.EmotionScheduler.processQueue(EmotionScheduler.nyava:514)
+    at cn.4c01.neko.core.NekoCore.update(NekoCore.nyava:1919)
+    at cn.4c01.neko.brain.BrainLoop.tick(BrainLoop.nyava:810)
+Caused by: cn.4c01.neko.emotion.OverloadException: 过多的rua猫娘
+    at cn.4c01.neko.emotion.EmotionEngine.checkThreshold(EmotionEngine.nyava:1145)
+    at cn.4c01.neko.emotion.EmotionEngine.calcOverflow(EmotionEngine.nyava:1419)
+    at cn.4c01.neko.behavior.NekoBehavior.handleStimuli(NekoBehavior.nyava:19810)
+
+
+
+cn.4c01.Neko$SlackOffException: 工作模式异常
+    at cn.4c01.neko.behavior.NekoBehavior.performTask(NekoBehavior.nyava:114)
+    at cn.4c01.neko.scheduler.ProductivityScheduler.checkProgress(ProductivityScheduler.nyava:514)
+    at cn.4c01.neko.core.NekoCore.tick(NekoCore.nyava:1919)
+    at cn.4c01.neko.brain.BrainLoop.process(BrainLoop.nyava:810)
+Caused by: cn.4c01.neko.behavior.LazyException: 当前工作未及时执行
+    at cn.4c01.neko.behavior.DistractionModule.scan(DistractionModule.nyava:1145)
+    at cn.4c01.neko.behavior.ProductivityTracker.checkTask(ProductivityTracker.nyava:1419)
+    at cn.4c01.neko.behavior.NekoBehavior.performTask(NekoBehavior.nyava:19810)
+
+
+
+cn.4c01.Neko$SocialAnxietyException: 社交中出现了不合理的行为
+    at cn.4c01.neko.behavior.NekoBehavior.interact(NekoBehavior.nyava:114)
+    at cn.4c01.neko.scheduler.SocialScheduler.processInteraction(SocialScheduler.nyava:514)
+    at cn.4c01.neko.core.NekoCore.tick(NekoCore.nyava:1919)
+    at cn.4c01.neko.brain.BrainLoop.run(BrainLoop.nyava:810)
+Caused by: cn.4c01.neko.social.BoundaryViolationException: 受到他人不合乎常理的目光
+    at cn.4c01.neko.social.EyeContactDetector.analyze(EyeContactDetector.nyava:1145)
+    at cn.4c01.neko.social.Amygdala.react(Amygdala.nyava:1419)
+    at cn.4c01.neko.behavior.NekoBehavior.interact(NekoBehavior.nyava:19810)
