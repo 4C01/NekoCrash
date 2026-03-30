@@ -1,0 +1,45 @@
+---- Minecraft Crash Report ----
+// Neko has stopped thinking. Maybe give it a snack?
+// 猫咪停止思考了，快给它小鱼干！
+
+Time: 2026-03-30 19:32:17 JST
+Description: 过于害羞造成的原地消失
+
+cn.4c01.Neko$NekoLeftException: 猫咪消失了
+    at cn.4c01.neko.Personality.ShynessModule.handleGlance(Personality.nyava:114)
+    at cn.4c01.neko.Personality.EmotionEngine.process(Personality.nyava:514)
+    at cn.4c01.neko.ChatNeko.onChat(ChatNeko.nyava:191)
+    at cn.4c01.neko.brain.QQManager.processQQ(QQManager.nyava:810)
+Caused by: cn.4c01.neko.social.BlushOverflowException: 过于害羞造成的原地消失
+    at cn.4c01.neko.social.EyeContactDetector.analyze(EyeContactDetector.nyava:1145)
+    at cn.4c01.neko.social.Amygdala.react(Amygdala.nyava:1419)
+    at cn.4c01.neko.Personality.ShynessModule.handleGlance(Personality.nyava:19810)
+
+A detailed walkthrough of the error, its brain path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Neko Main Thread
+Stacktrace:
+    at cn.4c01.neko.brain.QQManager.processQQ(QQManager.nyava:810)
+    at cn.4c01.neko.ChatNeko.onChat(ChatNeko.nyava:191)
+    at cn.4c01.neko.Personality.EmotionEngine.process(Personality.nyava:514)
+    at cn.4c01.neko.Personality.ShynessModule.handleGlance(Personality.nyava:114)
+
+-- Affected Personality Traits --
+    • 害羞 (Shyness) – level: 114514
+    • 傲娇 (Tsundere) – suppressed
+Effect: 猫咪消失了
+
+-- System Details --
+Neko Version: 2008-Trystage4C01-2026build (Neko:26.4)
+Operating System: NekoOS 7 (arm64)
+Java Version: 1.8.0_1145, NyaJDK
+Memory: 314572800 bytes (300 MB) / 838860800 bytes (800 MB) up to 4294967296 bytes (4096 MB)
+CPU Cores: 4
+Allocation Rate: 42 KB/tick
+
+-- Loaded Modules --
+    • ChatNeko (core) – 1.0.0
+    • ShynessModule (social) – 1.2.0
+    • QQManager (bridge) – 1.0.1
